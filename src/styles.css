@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Figtree-ExtraBold";
+    src: local("Figtree-ExtraBold"),
+      url("assets/fonts/static/Figtree-ExtraBold.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-family: "Figtree-SemiBold";
+    src: local("Figtree-SemiBold"),
+      url("assets/fonts/static/Figtree-SemiBold.ttf") format("ttf");
+  }
+  
+  :root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsla(0, 0%, 7%, 1);
+    --grey: hsl(0, 0%, 50%);
+    --yellow: hsl(47, 88%, 63%);
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+  }
+  
+  img.main__image {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    background: var(--yellow, #f4d04e);
+  }
+  
+  img.avatar__image {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+  }
+  
+  article {
+    display: flex;
+    width: 80%;
+    max-width: 384px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid var(--black, #111);
+    background: var(--white, #fff);
+    box-shadow: 8px 8px 0px 0px #000;
+  }
+  
+  button {
+    font-family: "Figtree-ExtraBold", sans-serif;
+    color: var(--black, #111);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 21px */
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: none;
+    background: var(--yellow, #f4d04e);
+  }
+  
+  h1 {
+    font-family: "Figtree-ExtraBold", sans-serif;
+    color: var(--black, #111);
+    font-size: clamp(20px, 5vw, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 36px */
+    align-self: stretch;
+  }
+  
+  h1:hover {
+    color: var(--yellow, #f4d04e);
+  }
+  
+  p.date {
+    font-family: "Figtree-SemiBold", sans-serif;
+    color: var(--black, #111);
+    font-size: clamp(12px, 4vw, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+  }
+  
+  p.description {
+    font-family: "Figtree-SemiBold", sans-serif;
+    color: var(--grey, #7f7f7f);
+    font-size: clamp(14px, 4vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+  }
+  
+  .avatar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: "Figtree-SemiBold", sans-serif;
+    color: var(--black, #111);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 21px */
+  }
